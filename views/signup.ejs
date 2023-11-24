@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="/icons/3d-casual-life-nft-music.png" type="image/x-icon">
+    <script src="/script/script.js" defer></script>
+</head>
+<body class="signup">
+
+    <header>
+        <h2 class="logo-sign">StreamAppLogo</h2>
+        <nav class="navigation">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+            <a href="/" class="lastNava"><div class="btnLogin-popup-sign"><span>Login</span></div></a>
+            <button class="btnSignup-popup-sign">SignUp</button>
+        </nav>
+    </header>
+    
+    <div class="wrapper-sign">
+        <span class="icon-close">
+            <ion-icon name="close"></ion-icon>
+        </span>
+        <div class="form-box-sign login">
+            <h2>SignUp</h2>
+            <form action="/signup" method="post">
+                <div class="input-box-sign">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="text" name="username" id="name" required>
+                    <label for="name">Username</label>
+                </div>
+                <div class="input-box-sign">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" name="email" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-box-sign">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" name="password" id="password" required>
+                    <label for="password">Password</label>
+                </div>
+                <div class="remember-forgot-sign">
+                    <label><input type="checkbox" required>I agree to the terms and conditions</a>
+                </div>
+                <button type="submit" class="btn-sign">SignUp</button>
+                <div class="login-register-sign">
+                    <p>Already have an account? <a href="/" class="register-link">Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
