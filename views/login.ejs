@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="shortcut icon" href="/icons/3d-casual-life-nft-music.png" type="image/x-icon">
     <script src="/script/script.js" defer></script>
 </head>
+
 <body>
 
     <header>
@@ -19,10 +21,15 @@
             <a href="#">Services</a>
             <a href="#">Contact</a>
             <button class="btnLogin-popup">Login</button>
-            <a href="/signup" class="lastNava"><div class="btnSignup-popup"><span>SignUp</span></div></a>
+            <a href="/signup" class="lastNava">
+                <div class="btnSignup-popup"><span>SignUp</span></div>
+            </a>
+            <a href="/profil" class="lastNava">
+                <div class="btnSignup-popup"><span><ion-icon name="logo-google"></ion-icon></span></div>
+            </a>
         </nav>
     </header>
-    
+
     <div class="wrapper">
         <span class="icon-close">
             <ion-icon name="close"></ion-icon>
@@ -30,19 +37,20 @@
         <div class="form-box login">
             <h2>Login</h2>
             <form action="/login" method="post">
-                    <div class="input-box" >
-                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                        <input type="email" name="email" id="email" required>
-                        <label for="email">Email</label>
-                    </div>
-                    <div class="input-box">
-                        <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                        <input type="password" name="password" id="password" required>
-                        <label for="password">Password</label>
-                    </div>
-                    <div class="remember-forgot">
-                        <label><input type="checkbox">Remember me </label><a href="#">Forgot Password?</a>
-                    </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" name="email" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" name="password" id="password" required>
+                    <label for="password">Password</label>
+                </div>
+                <div class="remember-forgot">
+                    <label><input type="checkbox" required>Remember me </label><a href="/passforgot" name="passForgot"
+                        id="passForgot">Forgot Password?</a>
+                </div>
                 <button type="submit" class="btn">Login</button>
                 <div class="login-register">
                     <p>Don't have an account? <a href="/signup" class="register-link">Signup</a></p>
@@ -55,4 +63,5 @@
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </body>
+
 </html>

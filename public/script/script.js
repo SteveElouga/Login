@@ -36,3 +36,4 @@ up.addEventListener('click', ()=>{
             sign.classList.add('active')
         }
 })
+
