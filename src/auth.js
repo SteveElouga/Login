@@ -15,7 +15,7 @@ passport.use(new GoogleStrategy({
     async function (request, accessToken, refreshToken, profile, done) {
         try {
             // Vérifier si l'utilisateur existe dans la base de données
-            let user = await collection.findOne({ email: profile.emails[0].value });
+            let user = await collection.findOne({ googleId: profile.id});
             // Récupérer la date de naissance du profil
             let dateNaissance = profile._json.birthday;
             const dd = new Date('1800-01-01')
@@ -53,7 +53,7 @@ passport.use(new GoogleStrategy({
 
                 await user.save();
             }else{
-                res.status(409).json({ message: "L'utilisateur existe deja. Veuillez choisir une autre adresse email !" })
+                console.log("L'utilisateur existe deja. Veuillez choisir une autre adresse email !" )
             }
 
             return done(null, user);
